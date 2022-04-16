@@ -4,11 +4,12 @@ const Schema = mongoose.Schema;
 const surveyModel = mongoose.Schema({
 
     FirstName: String,
-    LastName: String,
+    LastName: String, 
     Title: String,
-        CreatedDate: Date,
+    surveyType: String,
+    CreatedDate: Date,
     ExpiryDate: Date,
-     Questions: Array
+    Questions: Array
 
 
 },
