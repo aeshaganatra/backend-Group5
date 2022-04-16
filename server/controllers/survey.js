@@ -93,7 +93,7 @@ module.exports.processEditPage = (req, res, next)=>{
         if (err) throw err;
         var dbo = db.db("SurveySite");
         var myobj = {_id : new mongo.ObjectID(id)};
-        var newvalues = {$set:{FirstName: req.body.FirstName, LastName: req.body.LastName, Title: req.body.Title,
+        var newvalues = {$set:{FirstName: req.body.FirstName, LastName: req.body.LastName, Title: req.body.Title, surveyType: req.body.surveyType,
                 CreatedDate: req.body.CreatedDate, ExpiryDate: req.body.ExpiryDate, Questions: req.body.Questions}};
         dbo.collection("Survey").updateOne(myobj, newvalues, function(err, obj) {
             if (err) throw err;
