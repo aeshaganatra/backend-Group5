@@ -50,3 +50,8 @@ module.exports.performLogout = (req, res, next) => {
     req.logout();
     res.redirect('/');
 }
+
+exports.home = function(req, res, next) {
+    
+    res.redirect('/');
+}

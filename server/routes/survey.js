@@ -28,7 +28,7 @@ router.get('/survey-response/:id', surveyController.displaySurveyRespond);
 /* POST Route for processing the Add page - CREATE Operation */
 router.post('/add',  surveyController.processAddPage);
 
-/* POST Route for processing the Survey answer Add page - CREATE Operation */
+/* POST Route for processing the fill Survey page - CREATE Operation */
 router.post('/survey-response-add/:id',  surveyController.processSurveyRespondAddPage);
 
 /* POST Route for processing the Edit page - UPDATE Operation */

@@ -4,6 +4,12 @@ let router = express.Router();
 let indexController = require('../controllers/index');
 
 
+
+
+/* GET home page. */
+router.get('/', indexController.home);
+
+
 /* POST Route for processing the Login page */
 router.post('/login', indexController.processLoginPage);
 
